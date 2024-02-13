@@ -1,0 +1,61 @@
+:root {
+  --primary_txt:#2A2A2A;
+  --greycolor:#979797;
+  --skillclr: #1F6EE7;
+  --hoverclr: #dadada;
+}
+
+.main_link {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.main_link .card {
+  border-radius: 10px;
+  padding: 1em;
+  border: 1px solid transparent;
+}
+.main_link .card:hover {
+  background-color: #f7f7f7;
+}
+.main_link .card h2 {
+  margin: 0em 0em 0em 0em;
+  display: inline;
+  font-size: 1.1em;
+  font-family: ubuntu;
+}
+.main_link .card p {
+  font-family: ubuntu;
+  color: #979797;
+}
+.main_link .card .link {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 2em 0px 0px 0px;
+}
+.main_link .card .link .img1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--greycolor);
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.main_link .card .link .img1 img {
+  height: 25px;
+}
+.main_link .card .link .img1 a {
+  text-decoration: none;
+  color: var(--primary_txt);
+  font-family: ubuntu;
+  font-weight: 700;
+}
+.main_link .card .link .img1:hover {
+  border: 1px solid var(--primary_txt);
+}/*# sourceMappingURL=resources.css.map */

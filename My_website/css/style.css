@@ -1,0 +1,250 @@
+:root {
+  --primary_txt:#2A2A2A;
+  --greycolor:#979797;
+  --skillclr: #1F6EE7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: 22px;
+  margin: 0em 2em;
+  padding: 0;
+  color: var(--primary_txt);
+  font-family: "Dela Gothic One", sans-serif;
+  flex-direction: column;
+}
+
+.hovn {
+  background-color: var(--skillclr);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d_flex_sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  flex-direction: column;
+  width: 100%;
+}
+.nav .header {
+  border-bottom: 1px solid var(--primary_txt);
+  width: 99%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  padding: 0 5em;
+}
+.nav .header .logo_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.nav .header .logo_main img {
+  height: 30px;
+}
+.nav .header .design_since {
+  font-size: 1em;
+}
+.nav .header .menu_list ul {
+  gap: 3em;
+}
+.nav .header .menu_list ul li {
+  list-style: none;
+  font-size: 1em;
+}
+.nav .main_data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+.nav .main_data .main_text {
+  margin: 5em 0;
+  position: relative;
+  text-transform: uppercase;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.nav .main_data .main_text h1 {
+  line-height: 1em;
+  font-size: 6em;
+  margin: 0.2em 0;
+}
+.nav .main_data .main_text .back_img {
+  position: absolute;
+  opacity: 0.2;
+  right: 0;
+  top: -10em;
+  height: 40em;
+  z-index: -2;
+}
+.nav .main_data .main_text .logoabstr {
+  color: #2a2a2a;
+  position: absolute;
+  z-index: 1;
+  top: 13%;
+  right: 38%;
+  height: 30px;
+  width: 30px;
+  border: 4px solid var(--primary_txt);
+  border-radius: 50%;
+  display: flex;
+  background-color: white;
+  align-content: center;
+  justify-content: center;
+  padding: 1em;
+  -webkit-animation: rot 5s infinite ease-in-out;
+          animation: rot 5s infinite ease-in-out;
+}
+@-webkit-keyframes rot {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rot {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.nav .main_data .main_text .what_i_do {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  word-wrap: break-word;
+  width: 60%;
+}
+.nav hr {
+  margin-bottom: 1.5em;
+}
+.nav .read_social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5em 0;
+}
+.nav .read_social .btn {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid var(--primary_txt);
+  color: var(--primary_txt);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  border-radius: 30px;
+  font-family: "Dela Gothic One", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+.nav .read_social .btn a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: var(--primary_txt);
+}
+.nav .read_social .btn a:hover {
+  color: white;
+}
+.nav .read_social .btn:hover {
+  color: white;
+  border: 2px solid transparent;
+}
+.nav .read_social .btn:hover .effects {
+  top: 0%;
+}
+.nav .read_social .btn .effects {
+  position: absolute;
+  background-color: var(--primary_txt);
+  top: 100%;
+  left: 0;
+  padding: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.nav .read_social .social_list .social_link {
+  gap: 2em;
+  list-style: none;
+  text-transform: uppercase;
+}
+.nav .read_social .social_list .social_link li {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.nav .read_social .social_list .social_link li a {
+  text-decoration: none;
+  color: var(--greycolor);
+}
+.nav .read_social .social_list .social_link li:hover {
+  transform: translateY(-5px);
+}
+.nav .read_social .social_list .social_link li:hover a {
+  color: var(--primary_txt);
+}
+.nav hr {
+  background: var(--primary_txt);
+  height: 1px;
+  width: 100%;
+  border: none;
+}
+.nav h2 {
+  text-transform: uppercase;
+  color: var(--primary_txt);
+}
+.nav .port_images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5em;
+  margin: 2em 0;
+}
+.nav .port_images .img1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.nav .port_images .img1 span:hover {
+  background-color: red;
+}
+.nav .port_images .img1 :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary_txt);
+  padding: 0.2em;
+  border-radius: 0.4em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+.nav .port_images .img1 :nth-child(2) {
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
